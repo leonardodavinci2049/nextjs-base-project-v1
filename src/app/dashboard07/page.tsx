@@ -1,4 +1,4 @@
-import { AppSidebar } from "@/app/dashboard/components/app-sidebar";
+import { AppSidebar } from "@/app/dashboard07/components/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
