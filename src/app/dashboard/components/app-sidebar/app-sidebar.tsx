@@ -114,25 +114,25 @@ const data = {
       ],
     },
     {
-      title: "Settings",
+      title: "Relatórios",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "Painel",
+          url: "/dashboard/report/panel",
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Vendas",
+          url: "/report/sales",
         },
         {
-          title: "Billing",
-          url: "#",
+          title: "Clientes",
+          url: "/report/customers",
         },
         {
-          title: "Limits",
-          url: "#",
+          title: "Produtos",
+          url: "/report/products",
         },
       ],
     },
