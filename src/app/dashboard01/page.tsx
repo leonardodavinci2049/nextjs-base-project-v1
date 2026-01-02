@@ -1,7 +1,7 @@
-import { AppSidebar } from "@/app/dashboard01/components/app-sidebar";
-import { ChartAreaInteractive } from "@/app/dashboard01/components/chart-area-interactive";
-import { DataTable } from "@/app/dashboard01/components/data-table";
-import { SectionCards } from "@/app/dashboard01/components/section-cards";
+import { AppSidebar } from "@/app/dashboard01/components/app-sidebar/app-sidebar";
+import { ChartAreaInteractive } from "@/app/dashboard01/components/reports/chart-area-interactive";
+import { DataTable } from "@/app/dashboard01/components/reports/data-table";
+import { SectionCards } from "@/app/dashboard01/components/reports/section-cards";
 import { SiteHeader } from "@/app/dashboard01/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 

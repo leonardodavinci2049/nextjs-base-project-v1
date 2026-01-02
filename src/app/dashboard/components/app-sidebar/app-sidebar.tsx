@@ -14,10 +14,6 @@ import {
 } from "lucide-react";
 import type * as React from "react";
 
-import { NavMain } from "@/app/dashboard07/components/nav/nav-main";
-import { NavProjects } from "@/app/dashboard07/components/nav/nav-projects";
-import { NavUser } from "@/app/dashboard07/components/nav/nav-user";
-import { TeamSwitcher } from "@/app/dashboard07/components/nav/team-switcher";
 import {
   Sidebar,
   SidebarContent,
@@ -25,6 +21,10 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { NavMain } from "./nav-main";
+import { NavProjects } from "./nav-projects";
+import { NavUser } from "./nav-user";
+import { TeamSwitcher } from "./team-switcher";
 
 // This is sample data.
 const data = {

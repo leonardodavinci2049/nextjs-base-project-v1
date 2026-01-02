@@ -15,8 +15,9 @@ import { cn } from "@/lib/utils";
 import ModeToggle from "../theme/mode-toggle";
 
 const TopMenu = [
-  { name: "dashboar01", href: "/dashboard01" },
-  { name: "dashboar07", href: "/dashboard07" },
+  { name: "Dashboard", href: "/dashboard" },
+  { name: "Dashboar01", href: "/dashboard01" },
+  { name: "Dashboar07", href: "/dashboard07" },
   { name: "FAQ", href: "#faq" },
 ];
 
