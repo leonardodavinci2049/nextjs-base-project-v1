@@ -124,15 +124,15 @@ const data = {
         },
         {
           title: "Vendas",
-          url: "/report/sales",
+          url: "/dashboard/report/sales",
         },
         {
           title: "Clientes",
-          url: "/report/customers",
+          url: "/dashboard/report/customers",
         },
         {
           title: "Produtos",
-          url: "/report/products",
+          url: "/dashboard/report/products",
         },
       ],
     },

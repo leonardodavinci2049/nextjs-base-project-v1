@@ -8,7 +8,7 @@ const Page = () => {
         title="Dashboard"
         breadcrumbItems={[
           { label: "Dashboard", href: "#" },
-          { label: "Relatório Geral", isActive: true },
+          { label: "Relatório de Vendas", isActive: true },
         ]}
       />
       <DevelopmentPage />
