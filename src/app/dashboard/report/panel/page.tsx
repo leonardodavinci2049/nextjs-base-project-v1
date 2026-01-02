@@ -1,5 +1,9 @@
-import DevelopmentPage from "@/components/common/DevelopmentPage";
+import { ChartAreaInteractive } from "@/app/dashboard/components/panel/chart-area-interactive";
+import { DataTable } from "@/app/dashboard/components/panel/data-table";
+import { SectionCards } from "@/app/dashboard/components/panel/section-cards";
 import { SiteHeaderWithBreadcrumb } from "../../header/site-header-with-breadcrumb";
+
+import data from "@/app/dashboard/components/panel/data.json";
 
 const Page = () => {
   return (
@@ -11,7 +15,17 @@ const Page = () => {
           { label: "Relatório Geral", isActive: true },
         ]}
       />
-      <DevelopmentPage />
+      <div className="flex flex-1 flex-col">
+        <div className="@container/main flex flex-1 flex-col gap-2">
+          <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+            <SectionCards />
+            <div className="px-4 lg:px-6">
+              <ChartAreaInteractive />
+            </div>
+            <DataTable data={data} />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
