@@ -1,0 +1,54 @@
+import {
+  Clock,
+  FileText,
+  HelpCircle,
+  SettingsIcon,
+  Sun,
+  User,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export function Header() {
+  const currentDate = new Date().toLocaleDateString("pt-BR");
+  const currentTime = new Date().toLocaleTimeString("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  return (
+    <header className="h-16 border-b border-border bg-card px-6 flex items-center justify-between">
+      <h2 className="text-lg font-semibold text-foreground">Sistema PDV</h2>
+
+      <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <User className="h-4 w-4" />
+          <span>João Silva</span>
+        </div>
+
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Clock className="h-4 w-4" />
+          <span>
+            {currentTime} {currentDate}
+          </span>
+        </div>
+
+        <Button variant="ghost" size="sm" className="gap-2">
+          <FileText className="h-4 w-4" />
+          Orçamento
+        </Button>
+
+        <Button variant="ghost" size="icon">
+          <Sun className="h-5 w-5" />
+        </Button>
+
+        <Button variant="ghost" size="icon">
+          <SettingsIcon className="h-5 w-5" />
+        </Button>
+
+        <Button variant="ghost" size="icon">
+          <HelpCircle className="h-5 w-5" />
+        </Button>
+      </div>
+    </header>
+  );
+}
