@@ -1,8 +1,10 @@
-import { CustomerSection } from "../pdv/components/customer-section";
-import { Header } from "../pdv/components/header";
-import { OrderItemsSection } from "../pdv/components/order-items-section";
-import { OrderSummary } from "../pdv/components/order-summary";
+
 import { SiteHeaderWithBreadcrumb } from "./_components/header/site-header-with-breadcrumb";
+import { CustomerSection } from "./_components/pdv/customer-section";
+import { Header } from "./_components/pdv/header";
+
+import { OrderItemsSection } from "./_components/pdv/order-items-section";
+import { OrderSummary } from "./_components/pdv/order-summary";
 
 export default function DashboardPage() {
   return (
@@ -15,7 +17,7 @@ export default function DashboardPage() {
           { label: "Analytics", isActive: true },
         ]}
       />
-      
+
       {/* Conteúdo com scroll */}
       <div className="flex flex-1 flex-col overflow-hidden">
         <Header />
