@@ -38,10 +38,6 @@ export function Header() {
         </Button>
 
         <Button variant="ghost" size="icon">
-          <Sun className="h-5 w-5" />
-        </Button>
-
-        <Button variant="ghost" size="icon">
           <SettingsIcon className="h-5 w-5" />
         </Button>
 

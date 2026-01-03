@@ -4,10 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PaymentMethods } from "./payment-methods";
 
-
 export function OrderSummary() {
   return (
-    <Card className="h-full p-6 bg-card border-border flex flex-col">
+    <Card className="h-auto md:h-full p-6 bg-card border-border flex flex-col shrink-0">
       <h2 className="text-xl font-semibold mb-6 text-foreground">
         Resumo do Pedido
       </h2>
@@ -39,7 +38,7 @@ export function OrderSummary() {
         <PaymentMethods />
       </div>
 
-      <div className="mt-auto space-y-3">
+      <div className="md:mt-auto space-y-3">
         <Button variant="secondary" className="w-full" size="lg">
           Salvar Orçamento
         </Button>
