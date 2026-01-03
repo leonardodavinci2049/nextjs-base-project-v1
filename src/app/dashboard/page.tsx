@@ -6,7 +6,8 @@ import { SiteHeaderWithBreadcrumb } from "./_components/header/site-header-with-
 
 export default function DashboardPage() {
   return (
-    <>
+    <div className="flex h-screen flex-col bg-background">
+      {/* Header fixo no topo */}
       <SiteHeaderWithBreadcrumb
         title="Dashboard"
         breadcrumbItems={[
@@ -14,22 +15,22 @@ export default function DashboardPage() {
           { label: "Analytics", isActive: true },
         ]}
       />
-      <div className="flex h-screen bg-background">
-        <div className="flex flex-1 flex-col">
-          <Header />
+      
+      {/* Conteúdo com scroll */}
+      <div className="flex flex-1 flex-col overflow-hidden">
+        <Header />
 
-          <div className="flex flex-1 flex-col md:flex-row gap-4 p-4 overflow-auto md:overflow-hidden">
-            <main className="flex-1 flex flex-col gap-4 md:overflow-auto">
-              <CustomerSection />
-              <OrderItemsSection />
-            </main>
+        <div className="flex flex-1 flex-col md:flex-row gap-4 p-4 overflow-auto">
+          <main className="flex-1 flex flex-col gap-4">
+            <CustomerSection />
+            <OrderItemsSection />
+          </main>
 
-            <aside className="w-full md:w-96 shrink-0">
-              <OrderSummary />
-            </aside>
-          </div>
+          <aside className="w-full md:w-96 shrink-0">
+            <OrderSummary />
+          </aside>
         </div>
       </div>
-    </>
+    </div>
   );
 }
